@@ -1,10 +1,14 @@
+import { useContext } from 'react';
 
-function Nome({ nome, mudaNome }) {
+import {UserContext} from '../../contexts/user'
+
+
+function Nome() {
     return (
       <div>
-        <span style={{ color: '#FF0000' }} >Bem vindo: {nome} </span>
+        <span style={{ color: '#FF0000' }} >Bem vindo:  </span>
         <br/>
-        <button onClick={() => mudaNome('Sujeito Programador') } >Trocar nome</button>
+     
       </div>
     );
   }
